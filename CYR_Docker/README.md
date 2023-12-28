@@ -1,7 +1,7 @@
 # Pasos para Configurar y Ejecutar el Proyecto con Docker
 
 ## 1. Navegar a la Ruta Raíz del Proyecto CYR_DOCKER
-Asegúrate de estar en la ruta raíz de la carpeta CYR_DOCKER antes de realizar cualquier acción.
+Asegúrate de estar en la ruta raíz de la carpeta CYR_Docker antes de realizar cualquier acción.
 
 ## 2. Construir y lanzar servicios definidos en el fichero docker-compose.yml
 En la terminal de comandos ejecuta el siguiente comando para construir y luego levantar los servicios definidos en tu archivo docker-compose.yml. Tenga paciencia que este proceso puede tomar unos minutos.

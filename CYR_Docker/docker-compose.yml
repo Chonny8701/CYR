@@ -1,0 +1,45 @@
+services:
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    depends_on:
+      - server
+    image: imagen_cyr_client
+    networks:
+      - my_network
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mysql-db
+    image: imagen_cyr-server
+    env_file:
+      - ./server/.env
+    networks:
+      - my_network
+
+  mysql-db:
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 'password_1'
+      MYSQL_DATABASE: 'db_pide_tu_cita'
+      MYSQL_USER: 'user_1'
+      MYSQL_PASSWORD: 'password_1'
+    image: imagen_cyr_database
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge
+

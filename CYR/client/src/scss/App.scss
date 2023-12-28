@@ -1,0 +1,22 @@
+@import './abstracts/mixins';
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100vh;
+  color: #094067;
+}
+
+.app-info-contenedor{
+  margin-top: 50px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+
+}

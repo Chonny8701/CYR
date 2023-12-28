@@ -1,0 +1,64 @@
+@import './variables';
+
+//Cambiar tema light / dark
+@mixin theme($ligth-theme:true){
+  @if $ligth-theme{
+    background: $primary-color;
+    color: $text-color1;
+  } @else {
+    background: $secundary-color;
+    color: $text-color2;
+  }
+}
+
+//Mixin para Flex
+@mixin flexible( $disp , $direction , $corte , $just , $align ){
+  display         : $disp;
+  flex-flow       : $direction $corte;
+  justify-content : $just;
+  align-items     : $align;
+}
+
+//Mixin caja predefinido
+@mixin box($width: 100px, $height:200px){
+  width: $width;
+  height: $height;
+}
+
+//Mixin para bordes
+@mixin border-rounded($border-radius: 50%, $border: 2px solid black){
+  border-radius: $border-radius;
+  border: $border;
+}
+
+//Button predefinido
+@mixin button1(){
+  width: 100%;
+  border: 2px solid $primary-color;
+  border-radius: 4px;
+}
+
+//Breakpoints
+@mixin display-tiny(){
+  @media only screen and (max-width: 320px){
+    @content;
+  }
+};
+
+@mixin display-small(){
+  @media only screen and (max-width: 480px){
+    @content;
+  }
+};
+
+@mixin display-medium(){
+  @media only screen and (max-width: 768px){
+    @content;
+  }
+};
+
+@mixin display-large(){
+  @media only screen and (max-width: 992px){
+    @content;
+  }
+};

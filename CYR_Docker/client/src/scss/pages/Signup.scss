@@ -1,0 +1,50 @@
+@import '../abstracts/mixins';
+
+.signup-contenedor{
+  max-width: 1200px;
+  min-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.signup-formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.usuario-form-contacto{
+  gap: 20px;
+}
+
+.asterisco{
+  color: rgb(139, 0, 0);
+}
+
+.signup-linkTo{
+  text-decoration: none;
+  margin-left: 20px;
+  color: black;
+  width: 100px;
+  &:hover{
+    color: blue;
+  }
+}
+
+@media (max-width: 992px) {
+  .signup-contenedor{
+
+    min-width: 500px;
+    // max-width: 90vw;
+
+  }
+
+  .usuario-form-contacto{
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,55 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+.columna-lateral{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 25px;
+
+  // border-right: 2px solid #007bff;
+}
+
+
+.button-menu {
+  max-width: 200px;
+  padding: 10px;
+  flex-grow: 1;
+
+  &.custom-active {
+    background-color: $text-color1; 
+    color: white;
+    // Otros estilos que deseas aplicar cuando el botón está activo
+  }
+}
+
+
+
+.item-categorias{
+  @include flexible( flex , column , wrap , center , center );
+  display: inline-block; // Para que se comporte como un bloque
+  cursor: pointer;
+  width: 60px;
+  transition: 0.5s;
+  color: $text-color2;
+
+  &:hover {
+    color: red;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Aplicar a ambas columnas */
+  .ancho-total {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .columna-lateral{
+    max-width: 100%;
+    border-right: transparent;
+    margin-bottom: 50px;
+  }
+
+}

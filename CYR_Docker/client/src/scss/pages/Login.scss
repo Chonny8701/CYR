@@ -1,0 +1,32 @@
+@import '../abstracts/mixins';
+
+.login-contenedor{
+  max-width: 1200px;
+  min-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-linkTo{
+  text-decoration: none;
+  margin-left: 20px;
+  color: black;
+  width: 100px;
+  &:hover{
+    color: blue;
+  }
+}
+
+@media (max-width: 992px) {
+  .login-contenedor{
+    min-width: 300px;
+  }
+}

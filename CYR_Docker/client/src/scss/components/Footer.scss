@@ -1,0 +1,73 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+.footer-container{
+  margin-top: 20px;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $text-color1;
+  background-image: url('/wave.svg'); // Ajusta la ruta según la ubicación de tu archivo SVG
+  background-size: cover; // Ajusta según tus preferencias
+  background-repeat: no-repeat;
+}
+  
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:0 50px
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+}
+
+.footer-data p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-icon {
+  margin-right: 8px;
+  color: $text-color1;
+  width: 30px;
+  height: 30px;
+}
+
+.follow-us {
+  margin-top: 30px; /* Espacio entre los datos de contacto y la sección "Síguenos" */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px; /* Espacio entre los iconos de redes sociales */
+}
+
+.copyrights{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap:20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer-container{
+    color: $text-color1;
+    background-color: #90b4ce;
+    background-image: none; // Ajusta la ruta según la ubicación de tu archivo SVG
+  }
+}

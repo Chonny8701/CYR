@@ -1,0 +1,42 @@
+@import '../../abstracts/variables';
+.modal {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: none; /* Inicialmente oculto */
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s;
+  color: black;
+}
+
+.modal.is-open {
+  display: flex; /* Mostrar solo cuando tiene la clase .is-open */
+}
+
+.modal-container {
+  position: relative;
+  padding: 3rem;
+  width: 50vw;
+  min-width: 320px; /* Agregamos "px" a los valores numéricos */
+  max-width: 80vw; /* Agregamos "px" a los valores numéricos */
+  min-height: 200px; /* Agregamos "px" a los valores numéricos */
+  max-height: 90vh; /* Agregamos "px" a los valores numéricos */
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer; /* Agregamos un puntero al botón de cierre */
+}

@@ -1,0 +1,6 @@
+.venv_citas_desarrollo
+
+__pycache__/
+*.py[cod]
+
+.pytest_cache

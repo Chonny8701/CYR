@@ -1,0 +1,30 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+.barra-busqueda-contenedor{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.elemento-busqueda {
+  width: 300px;
+  min-width: 100px;
+}
+
+.input-con-icono {
+  position: relative;
+}
+
+.icono-input {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px; /* Ajusta la posición del icono según sea necesario */
+}
+
+/* Ajusta el padding izquierdo para dejar espacio al icono */
+.input-con-icono .form-control {
+  padding-left: 40px;
+}

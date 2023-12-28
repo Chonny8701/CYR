@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300&display=swap');
+
+$primary-color: red;
+$secundary-color: green;
+$terciary-color: blue;
+$text-color1: #094067;
+$text-color2: #fffffe;
+
+$my-font1:'Poppins', sans-serif;
+
+:root{
+  /*Fuentes*/
+  --font-poppins:'Poppins', sans-serif;
+
+  /*Colores*/
+  --color-primario: red;
+  --color-secundario: green;
+  --color-terciario: blue;
+}

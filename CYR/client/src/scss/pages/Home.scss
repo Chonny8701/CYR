@@ -1,0 +1,7 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+.negocios{
+  @include flexible( flex , row , wrap , center , center );
+  gap: 5px
+}

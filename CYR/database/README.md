@@ -7,8 +7,8 @@ Buscar variables necesarias para la conexón con la base de datos que serán alm
 
 Las variables necesarias son:
 
-DB_HOST
-DB_PORT
-DB_USER
-DB_PASSWORD
-DB_DATABASE
+DB_HOST  
+DB_PORT  
+DB_USER  
+DB_PASSWORD  
+DB_DATABASE  

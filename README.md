@@ -6,11 +6,11 @@ Este proyecto consiste en una aplicación web desarrollada con Vite y React para
 
   Existen dos vias para lanzar el proyecto, la primera es a través de Docker y la segunda es usando Node.js y Python
 
-  - **Lanzar aplicación utilizando Docker**
+  - **Lanzar aplicación utilizando Docker**  
     -Tenga en cuenta que para lanzar el proyecto deberá tener instalado Docker en su ordenador
     -Acceda a la carpeta CYR_Docker y sigua las instrucciones descritas en el fichero README.md
 
-  - **Lanzar aplicación utilizando Node.js y Python**
+  - **Lanzar aplicación utilizando Node.js y Python**  
     -Tenga en cuenta que para lanzar el proyecto deberá tener instalado Node.js para la ejecución de la aplicacion cliente y Python para la ejecución de la aplicación servidor
     -Acceda a la carpeta CYR. Para lanzar los proyectos cliente / servidor / database siga las instrucciones de los ficheros README.md dentro de las respectivas carpetas
 

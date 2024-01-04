@@ -1,4 +1,4 @@
-# Proyecto de Gestión de Citas
+# Proyecto de Gestión de Citas y Reservas (CYR)
 
 Este proyecto consiste en una aplicación web desarrollada con Vite y React para clientes, diseñada para facilitar la gestión de reservas de citas en diversos negocios. Los usuarios tienen la capacidad de realizar tanto el registro como el inicio de sesión, permitiéndoles configurar y gestionar sus propios negocios, así como manejar las reservas correspondientes.
 
